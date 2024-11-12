@@ -1,0 +1,27 @@
+ //Program_1_and_gate
+ module and_gate;
+ reg a;
+ reg b;
+ wire y,;  
+assign y = a & b;
+ initial
+ begin
+ a = 0; b = 1;
+ //#10
+ $display("a=%b b=%b y=%b", a, b, y);
+ $finish;
+ end
+ endmodule // example_and_gate
+  //Program_2_and_gate
+ module and_gate_1;
+ reg a, b; 
+wire z; 
+and my_and(z, a, b);
+ initial
+ begin
+ end
+ a = 0; b =1;
+ #10
+ $display("a= %b  b= %b z= %b", a, b, z);
+ $finish;
+ endmodule
